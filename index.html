@@ -1,38 +1,77 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to My Website</title>
+  <title>Your Name | Personal Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
       text-align: center;
-      padding: 50px;
     }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
+    header {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #666;
+    }
+    nav {
+      margin-top: 30px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 18px;
+      margin: 0 15px;
+      border: 2px solid #4CAF50;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
       background-color: #4CAF50;
       color: white;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 8px;
     }
-    a:hover {
-      background-color: #45a049;
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to My Personal Page</h1>
-  <p>Click the button below to visit my special page!</p>
+  <header>
+    <h1>Your Name</h1>
+    <p>Aspiring [Your Future Role, e.g., Web Developer, Data Analyst, Designer]</p>
+    <p>Passionate about [your main skill or passion, e.g., building user-friendly websites]</p>
+  </header>
 
-  <a href="xiaoyitan.html">Go to Xiaoyitan's Page</a>
+  <nav>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
 
 </body>
 </html>
+

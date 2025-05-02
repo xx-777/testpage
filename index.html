@@ -3,17 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My Page</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Unfolding Paper</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+
+    .paper {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform-origin: center;
+      animation: unfold 2s forwards;
+    }
+
+    @keyframes unfold {
+      0% {
+        width: 100px;
+        height: 100px;
+        transform: scale(1);
+      }
+      100% {
+        width: 500px;
+        height: 500px;
+        transform: scale(1);
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="envelope">
-    <div class="flap"></div>
-    <div class="letter">
-      <h1>Hello, I'm Nora</h1>
-      <p>Welcome to my personal website. I'm an administrative assistant who loves structure, clarity, and communication. Let's unfold my story together.</p>
-      <a href="#about">Read More</a>
-    </div>
-  </div>
+
+  <div class="paper"></div>
+
 </body>
 </html>
